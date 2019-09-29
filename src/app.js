@@ -7,4 +7,6 @@ app.use(express.json());
 // y pasarlos a un objeto JS
 app.use(express.urlencoded({ extended: false }));
 
+app.use(require('./controllers/authController'));
+
 module.exports = app;
