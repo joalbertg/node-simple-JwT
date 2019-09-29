@@ -1,4 +1,5 @@
 const app = require('./app');
+require('./database');
 
 const init = async () => {
   await app.listen(3000);
